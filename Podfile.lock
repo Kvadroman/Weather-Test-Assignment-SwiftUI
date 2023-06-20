@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (5.7.1)
+  - CombineCocoa (0.4.1)
+  - SnapKit (5.6.0)
+  - Swinject (2.8.3)
+
+DEPENDENCIES:
+  - Alamofire
+  - CombineCocoa
+  - SnapKit
+  - Swinject
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CombineCocoa
+    - SnapKit
+    - Swinject
+
+SPEC CHECKSUMS:
+  Alamofire: 0123a34370cb170936ae79a8df46cc62b2edeb88
+  CombineCocoa: e5210dbfb480ff251078929459ac17e750e7af1d
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  Swinject: 893c9a543000ac2f10ee4cbaf0933c6992c935d5
+
+PODFILE CHECKSUM: 763f40aeab43aca75fb1ae267000f4906ccd7c07
+
+COCOAPODS: 1.11.2
