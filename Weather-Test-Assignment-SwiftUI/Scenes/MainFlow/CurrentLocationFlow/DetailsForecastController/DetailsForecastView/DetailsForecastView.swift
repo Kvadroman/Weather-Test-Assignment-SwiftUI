@@ -9,40 +9,15 @@ import SwiftUI
 import Combine
 
 
-struct DetailsForecastView<T: DetailsForecastViewModeling>: View, ContentView {
-    @ObservedObject var viewModel: T
-    
-    // MARK: - Init
-    init(viewModel: T) {
-        self.viewModel = viewModel
-    }
+struct DetailsForecastView: View {
+    var forecasts: [Forecast]?
     
     var body: some View {
-        List(viewModel.output.hourlyForecastModel ?? []) { forecast in
+        List(forecasts ?? []) { forecast in
             CurrentWeatherCell(forecast: forecast)
         }
-        .onAppear(perform: {
-            self.viewModel.input.viewDidLoad.send()
-        })
-    }
-}
-
-struct CurrentWeatherCell: View {
-    var forecast: ForeCastProtocol
-
-    var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            Text("Date: \(forecast.date)")
-            Text("Temperature: \(forecast.temperatureCelsius)")
-            Text("Min Temperature: \(forecast.minTemperatureCelsius)")
-            Text("Max Temperature: \(forecast.maxTemperatureCelsius)")
-            Text("Feels Like: \(forecast.feelsLikeCelsius)")
-            Text("Description: \(forecast.description)")
-            Text("Pressure: \(forecast.pressure)")
-            Text("Wind Speed: \(forecast.windSpeed)")
-            Text("Humidity: \(forecast.humidity)")
-            Text("Clouds: \(forecast.cloudsAll)")
+        .padding(EdgeInsets(top: 0, leading: -20, bottom: -20, trailing: -20))
+        .onDisappear {
         }
-        .padding()
     }
 }

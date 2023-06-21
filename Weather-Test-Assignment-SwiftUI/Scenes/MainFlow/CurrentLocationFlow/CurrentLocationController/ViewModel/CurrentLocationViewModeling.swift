@@ -18,8 +18,9 @@ protocol CurrentLocationViewModelingInput {
 }
 
 protocol CurrentLocationViewModelingOutput {
-    var selectedDay: Date? { get }
-    var weatherResponse: WeatherResponse? { get }
-    var errorMessage: Error? { get }
-    var hourlyForecast: [Forecast]? { get }
+    var selectedDay: CurrentValueSubject<Date?, Never> { get }
+    var weatherResponse: CurrentValueSubject<WeatherResponse?, Never> { get }
+    var averageForecasts: CurrentValueSubject<[AverageForecast]?, Never> { get }
+    var errorMessage: CurrentValueSubject<Error?, Never> { get }
+    var hourlyForecast: CurrentValueSubject<[Forecast]?, Never> { get }
 }

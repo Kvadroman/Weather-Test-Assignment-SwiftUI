@@ -8,43 +8,50 @@
 import SwiftUI
 import Combine
 
-struct FindCityView<T: FindCityViewModeling>: View, ContentView {
+struct FindCityView<T: FindCityViewModeling>: ContentView {
+    typealias ViewModelType = T
     
     @ObservedObject var viewModel: T
     
-    @State var cityName: String = ""
-    
-    // MARK: - Init
     init(viewModel: T) {
         self.viewModel = viewModel
     }
     
     var body: some View {
-        VStack(alignment: .leading) {
-            TextField("Search City", text: $cityName, onEditingChanged: { finished in
-                if finished {
-                    viewModel.input.didEnterCityName.send(cityName)
-                    cityName = ""
-                }
+        VStack {
+            let cityNameBinding = Binding<String>(
+                get: { viewModel.output.cityName.value ?? "" },
+                set: { newValue in viewModel.output.cityName.value = newValue }
+            )
+            
+            TextField("Search City", text: cityNameBinding, onCommit: {
+                viewModel.input.didEnterCityName.send(viewModel.output.cityName.value ?? "")
             })
             .textFieldStyle(RoundedBorderTextFieldStyle())
             .padding()
+            
+            Spacer()
+            
+            VStack(alignment: .leading) {
+                Text(viewModel.output.foreCastModel.value?.cityName ?? "")
+                Text(viewModel.output.foreCastModel.value?.main.temperatureCelsius ?? "")
+                Text(viewModel.output.foreCastModel.value?.main.minTemperatureCelsius ?? "")
+                Text(viewModel.output.foreCastModel.value?.main.maxTemperatureCelsius ?? "")
+                Text(viewModel.output.foreCastModel.value?.main.feelsLikeCelsius ?? "")
+                Text(viewModel.output.foreCastModel.value?.pressureString ?? "")
+                Text(viewModel.output.foreCastModel.value?.windSpeedString ?? "")
+                Text(viewModel.output.foreCastModel.value?.humidityString ?? "")
+                Text(viewModel.output.foreCastModel.value?.cloudsString ?? "")
+                Text(viewModel.output.foreCastModel.value?.descriptionSting ?? "")
+            }
+            .padding(16)
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+            .edgesIgnoringSafeArea([.top, .bottom])
         }
-        VStack(alignment: .leading) {
-            Text("City: \(viewModel.output.foreCastModel?.name ?? "Unknown")")
-            Text("Temperature: \(viewModel.output.foreCastModel?.main.temperatureCelsius ?? "Unknown")")
-            Text("Minimum Temperature: \(viewModel.output.foreCastModel?.main.minTemperatureCelsius ?? "Unknown")")
-            Text("Maximum Temperature: \(viewModel.output.foreCastModel?.main.maxTemperatureCelsius ?? "Unknown")")
-            Text("Feels Like: \(viewModel.output.foreCastModel?.main.feelsLikeCelsius ?? "Unknown")")
-            Text("Pressure: \(viewModel.output.foreCastModel?.main.pressure ?? 0) hPa")
-            Text("Wind Speed: \(viewModel.output.foreCastModel?.wind.speed ?? 0) mph")
-            Text("Humidity: \(viewModel.output.foreCastModel?.main.humidity ?? 0) %")
-            Text("Clouds: \(viewModel.output.foreCastModel?.clouds.all ?? 0) %")
-            Text("Description: \(viewModel.output.foreCastModel?.weather.first?.description ?? "Unknown")")
-        }
-        .alert(isPresented: .constant(self.viewModel.output.onError != nil)) {
-            Alert(title: Text("Error"), message: Text(self.viewModel.output.onError?.localizedDescription ?? "Unknown error"), dismissButton: .default(Text("OK"), action: {
-                self.viewModel.output.onError = nil  // Reset the error after it has been shown
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .alert(isPresented: .constant(viewModel.output.onError.value != nil)) {
+            Alert(title: Text("Error"), message: Text(viewModel.output.onError.value?.localizedDescription ?? "Unknown error"), dismissButton: .default(Text("OK"), action: {
+                viewModel.input.refreshError.send()  // Reset the error after it has been shown
             }))
         }
     }

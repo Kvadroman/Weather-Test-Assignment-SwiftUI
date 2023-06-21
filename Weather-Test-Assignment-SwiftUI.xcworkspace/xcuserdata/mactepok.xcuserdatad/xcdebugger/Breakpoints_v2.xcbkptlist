@@ -7,54 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "60B50F29-CCBF-48BA-A97B-30940C836F68"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Weather-Test-Assignment-SwiftUI/Scenes/MainFlow/CurrentLocationFlow/CurrentLocationController/ViewModel/CurrentLocationViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
-            landmarkName = "getWeather()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "60B50F29-CCBF-48BA-A97B-30940C836F68 - 7acb6c167dcb7492"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Weather_Test_Assignment_SwiftUI.CurrentLocationViewModel.getWeather() -&gt; ()"
-                  moduleName = "Weather-Test-Assignment-SwiftUI"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mactepok/Documents/GitHub/Weather-Test-Assignment-SwiftUI/Weather-Test-Assignment-SwiftUI/Scenes/MainFlow/CurrentLocationFlow/CurrentLocationController/ViewModel/CurrentLocationViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "115"
-                  endingLineNumber = "115"
-                  offsetFromSymbolStart = "196">
-               </Location>
-               <Location
-                  uuid = "60B50F29-CCBF-48BA-A97B-30940C836F68 - c249fad9d6f9a4b7"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Weather_Test_Assignment_SwiftUI.WeatherResponse, Swift.Error&gt;) -&gt; () in Weather_Test_Assignment_SwiftUI.CurrentLocationViewModel.getWeather() -&gt; ()"
-                  moduleName = "Weather-Test-Assignment-SwiftUI"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mactepok/Documents/GitHub/Weather-Test-Assignment-SwiftUI/Weather-Test-Assignment-SwiftUI/Scenes/MainFlow/CurrentLocationFlow/CurrentLocationController/ViewModel/CurrentLocationViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "115"
-                  endingLineNumber = "115"
-                  offsetFromSymbolStart = "580">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "A3B1F769-6A37-4A70-A2D1-32962A4D1A94"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -62,8 +14,8 @@
             filePath = "Weather-Test-Assignment-SwiftUI/Scenes/MainFlow/FindCityFlow/ViewModel/FindCityViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
             landmarkName = "bind()"
             landmarkType = "7">
          </BreakpointContent>
@@ -78,42 +30,10 @@
             filePath = "Weather-Test-Assignment-SwiftUI/Scenes/MainFlow/FindCityFlow/ViewModel/FindCityViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
             landmarkName = "getWeather(by:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E5B3D0A8-D4EC-48B6-B55E-229F56D30E63"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Weather-Test-Assignment-SwiftUI/Scenes/MainFlow/FindCityFlow/View/FindCityView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "body"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A5720F69-8B68-4102-A11F-CFE5CD72AC79"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Weather-Test-Assignment-SwiftUI/Scenes/MainFlow/FindCityFlow/View/FindCityView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "body"
-            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -126,8 +46,71 @@
             filePath = "Weather-Test-Assignment-SwiftUI/Scenes/MainFlow/CurrentLocationFlow/DetailsForecastController/DetailsForecastView/DetailsForecastView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "58F1F3F0-8CAC-4D50-89A2-79C33A8DBC49 - 81a10c83d3f9bbd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Weather_Test_Assignment_SwiftUI.Forecast) -&gt; Weather_Test_Assignment_SwiftUI.CurrentWeatherCell in Weather_Test_Assignment_SwiftUI.DetailsForecastView.body.getter : some"
+                  moduleName = "Weather-Test-Assignment-SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mactepok/Documents/GitHub/Weather-Test-Assignment-SwiftUI/Weather-Test-Assignment-SwiftUI/Scenes/MainFlow/CurrentLocationFlow/DetailsForecastController/DetailsForecastView/DetailsForecastView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "58F1F3F0-8CAC-4D50-89A2-79C33A8DBC49 - 81a10c83d3f9ad0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Weather_Test_Assignment_SwiftUI.Forecast) -&gt; Weather_Test_Assignment_SwiftUI.CurrentWeatherCell in Weather_Test_Assignment_SwiftUI.DetailsForecastView.body.getter : some"
+                  moduleName = "Weather-Test-Assignment-SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mactepok/Documents/GitHub/Weather-Test-Assignment-SwiftUI/Weather-Test-Assignment-SwiftUI/Scenes/MainFlow/CurrentLocationFlow/DetailsForecastController/DetailsForecastView/DetailsForecastView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "58F1F3F0-8CAC-4D50-89A2-79C33A8DBC49 - 81a10c83d3f9ad0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Weather_Test_Assignment_SwiftUI.Forecast) -&gt; Weather_Test_Assignment_SwiftUI.CurrentWeatherCell in Weather_Test_Assignment_SwiftUI.DetailsForecastView.body.getter : some"
+                  moduleName = "Weather-Test-Assignment-SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mactepok/Documents/GitHub/Weather-Test-Assignment-SwiftUI/Weather-Test-Assignment-SwiftUI/Scenes/MainFlow/CurrentLocationFlow/DetailsForecastController/DetailsForecastView/DetailsForecastView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "64">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DA99EE7E-446C-4517-B28D-4CD081461E2F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather-Test-Assignment-SwiftUI/Scenes/MainFlow/FindCityFlow/View/FindCityView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -135,31 +118,79 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "DD2A2A35-A861-4F25-BA28-614EC950278E"
+            uuid = "C3D88C9A-5DFD-45C7-9DB2-2A6977B7E648"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Weather-Test-Assignment-SwiftUI/Scenes/MainFlow/CurrentLocationFlow/DetailsForecastController/DetailsForecastView/DetailsForecastView.swift"
+            filePath = "Weather-Test-Assignment-SwiftUI/Scenes/MainFlow/CurrentLocationFlow/CurrentLocationController/View/CurrentLocationView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
             landmarkName = "body"
             landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "C3D88C9A-5DFD-45C7-9DB2-2A6977B7E648 - 11506a5daadf2119"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Weather_Test_Assignment_SwiftUI.AverageForecast) -&gt; SwiftUI.NavigationLink&lt;&lt;&lt;opaque return type of SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0, Weather_Test_Assignment_SwiftUI.DetailsForecastView&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.navigationBarItems&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(trailing: &#x3c4;_1_0) -&gt; some&gt;&gt;.0 in Weather_Test_Assignment_SwiftUI.CurrentLocationView.body.getter : some"
+                  moduleName = "Weather-Test-Assignment-SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mactepok/Documents/GitHub/Weather-Test-Assignment-SwiftUI/Weather-Test-Assignment-SwiftUI/Scenes/MainFlow/CurrentLocationFlow/CurrentLocationController/View/CurrentLocationView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "816">
+               </Location>
+               <Location
+                  uuid = "C3D88C9A-5DFD-45C7-9DB2-2A6977B7E648 - 33635b4c1bc66da1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Weather_Test_Assignment_SwiftUI.AverageForecast) -&gt; SwiftUI.NavigationLink&lt;Weather_Test_Assignment_SwiftUI.CurrentWeatherCell, &lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.navigationBarItems&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(trailing: &#x3c4;_1_0) -&gt; some&gt;&gt;.0 in Weather_Test_Assignment_SwiftUI.CurrentLocationView.body.getter : some"
+                  moduleName = "Weather-Test-Assignment-SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mactepok/Documents/GitHub/Weather-Test-Assignment-SwiftUI/Weather-Test-Assignment-SwiftUI/Scenes/MainFlow/CurrentLocationFlow/CurrentLocationController/View/CurrentLocationView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "276">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "055B57D4-D8A1-4677-96C4-617DA093AE8B"
+            uuid = "60B0DB1B-89EE-4DA7-8910-9C7373A752D3"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Weather-Test-Assignment-SwiftUI/Scenes/MainFlow/CurrentLocationFlow/DetailsForecastController/DetailsForecastViewModel/DetailsForecastViewModel.swift"
+            filePath = "Weather-Test-Assignment-SwiftUI/Scenes/MainFlow/CurrentLocationFlow/CurrentLocationController/ViewModel/CurrentLocationViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
+            landmarkName = "getWeather()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "73796454-A01D-4FE9-A384-7D5F69E40378"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather-Test-Assignment-SwiftUI/Scenes/MainFlow/CurrentLocationFlow/CurrentLocationController/ViewModel/CurrentLocationViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
             landmarkName = "bind()"
             landmarkType = "7">
          </BreakpointContent>
@@ -167,32 +198,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "DED31410-852A-423D-BBFA-3A81508BEB63"
+            uuid = "3969C5DC-10AD-4154-9858-6668351E0010"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Weather-Test-Assignment-SwiftUI/Scenes/MainFlow/CurrentLocationFlow/DetailsForecastController/DetailsForecastView/DetailsForecastView.swift"
+            filePath = "Weather-Test-Assignment-SwiftUI/Scenes/MainFlow/CurrentLocationFlow/CurrentLocationController/View/CurrentLocationView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "body"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "35FFE835-53E9-4551-9563-E221E2DBC4EB"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Weather-Test-Assignment-SwiftUI/Scenes/AppView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "body"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "alertIsPresented"
             landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>

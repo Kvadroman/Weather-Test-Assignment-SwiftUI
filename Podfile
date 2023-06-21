@@ -6,9 +6,6 @@ target 'Weather-Test-Assignment-SwiftUI' do
   use_frameworks!
 
   # Pods for Weather-Test-Assignment-SwiftUI
-pod 'Swinject'
-pod 'CombineCocoa'
 pod 'Alamofire'
-pod 'SnapKit'
 
 end

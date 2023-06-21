@@ -21,4 +21,3 @@ struct CLError: LocalizedError {
     static let failedToFind = CLError("Failed to find user's location")
     static let emptyStatus = CLError("You need to reload the app")
 }
-

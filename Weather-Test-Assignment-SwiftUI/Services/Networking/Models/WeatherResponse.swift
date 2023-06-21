@@ -22,6 +22,30 @@ struct WeatherResponseByCityName: Codable {
     let id: Int
     let name: String
     let cod: Int
+    
+    var cityName: String {
+        "City: \(name)"
+    }
+    
+    var pressureString: String {
+        "Pressure: \(main.pressure) hPa"
+    }
+    
+    var windSpeedString: String {
+        "Wind Speed: \(wind.speed) mph"
+    }
+    
+    var humidityString: String {
+        "Humidity: \(main.humidity) %"
+    }
+    
+    var cloudsString: String {
+        "Clouds: \(clouds.all) %"
+    }
+    
+    var descriptionSting: String {
+        "Description: \(weather.first?.description ?? "")"
+    }
 }
 
 struct WeatherResponse: Codable, Equatable, Hashable {

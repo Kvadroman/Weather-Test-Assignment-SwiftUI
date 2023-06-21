@@ -28,7 +28,7 @@ extension WeatherAPI: EndPointType {
     
     var httpMethod: HTTPMethod {
         switch self {
-        case .getWeather, .getWeatherByCityName:
+        default:
             return .get
         }
     }

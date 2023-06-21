@@ -11,7 +11,7 @@ protocol WeatherDateProcessorProtocol {
     func processForecasts(_ forecasts: [Forecast]) -> [AverageForecast]
 }
 
-class WeatherDateProcessor: WeatherDateProcessorProtocol {
+final class WeatherDateProcessor: WeatherDateProcessorProtocol {
     private let calendar = Calendar.current
 
     func processForecasts(_ forecasts: [Forecast]) -> [AverageForecast] {

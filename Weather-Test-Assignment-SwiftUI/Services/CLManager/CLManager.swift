@@ -51,7 +51,7 @@ final class CLManager: NSObject, CLManagerProtocol, CLLocationManagerDelegate {
     }
     
     private func getLocation() {
-        status = CLLocationManager.authorizationStatus()
+        status = locationManager.authorizationStatus
         switch status {
         case .notDetermined:
             locationManager.requestWhenInUseAuthorization()

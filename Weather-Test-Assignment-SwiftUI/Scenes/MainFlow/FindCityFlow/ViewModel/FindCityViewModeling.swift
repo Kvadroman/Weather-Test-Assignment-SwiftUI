@@ -12,9 +12,11 @@ protocol FindCityViewModeling: ViewModel where Input: FindCityViewModelingInput,
 
 protocol FindCityViewModelingInput {
     var didEnterCityName: PassthroughSubject<String, Never> { get }
+    var refreshError: PassthroughSubject<Void, Never> { get }
 }
 
-class FindCityViewModelingOutput {
-    @Published var foreCastModel: WeatherResponseByCityName?
-    @Published var onError: Error?
+protocol FindCityViewModelingOutput {
+    var foreCastModel: CurrentValueSubject<WeatherResponseByCityName?, Never> { get }
+    var cityName: CurrentValueSubject<String?, Never> { get }
+    var onError: CurrentValueSubject<Error?, Never> { get }
 }

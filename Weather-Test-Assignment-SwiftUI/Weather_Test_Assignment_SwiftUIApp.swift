@@ -9,10 +9,9 @@ import SwiftUI
 
 @main
 struct Weather_Test_Assignment_SwiftUIApp: App {
-    let container = AppDependencyContainer()
     var body: some Scene {
         WindowGroup {
-            container.resolveAppView(container: container)
+            AppView()
         }
     }
 }
